@@ -5,9 +5,9 @@ var chilometri = parseInt(prompt("Inserisci il numero di chilometri da percorrer
 // Chiedo l'età
 var etaPasseggero = parseInt(prompt("Quanti hanni hai?"));
 // indico una variabile con lo sconto minorenne
-var scontoMinorenne = parseInt((chilometri *0.21) *20 / 100);
+var scontoMinorenne = (chilometri *0.21) *20 / 100;
 // indico una variabile con lo sconto terza eta
-var scontoTerzaEta = parseInt((chilometri *0.21) *60 / 100);
+var scontoTerzaEta = (chilometri *0.21) *60 / 100;
 // nella if calcolo il totale del prezzo
 if (isNaN(etaPasseggero)) {
   alert("Mi sa che devi metterci un numero")
