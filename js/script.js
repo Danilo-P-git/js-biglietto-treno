@@ -13,13 +13,13 @@ if (isNaN(etaPasseggero)) {
   alert("Mi sa che devi metterci un numero")
 } else if (etaPasseggero <= 17) {
   var totaleMinorenneConSconto = (chilometri * 0.21) - scontoMinorenne;
-  document.getElementById('prezzo').innerHTML = totaleMinorenneConSconto;
+  document.getElementById('prezzo').innerHTML = Math.round(totaleMinorenneConSconto * 100) / 100;
 } else if (etaPasseggero >= 65) {
   var totaleTerzaEtaConSconto = (chilometri*0.21) - scontoTerzaEta;
-  document.getElementById('prezzo').innerHTML = totaleTerzaEtaConSconto;
+  document.getElementById('prezzo').innerHTML = Math.round(totaleTerzaEtaConSconto * 100) / 100;
 } else {
   var totaleNoSconto = chilometri * 0.21;
-  document.getElementById('prezzo').innerHTML = totaleNoSconto;
+  document.getElementById('prezzo').innerHTML = Math.round(totaleNoSconto * 100) / 100;
 }
 // Stampo il nome sulla pagina
 document.getElementById('nome').innerHTML = nomePasseggero;
