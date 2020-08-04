@@ -22,4 +22,4 @@ if (isNaN(etaPasseggero)) {
   document.getElementById('prezzo').innerHTML = totaleNoSconto;
 }
 // Stampo il nome sulla pagina
-document.getElementById('prezzo').innerHTML = prezzoPasseggero;
+document.getElementById('nome').innerHTML = nomePasseggero;
